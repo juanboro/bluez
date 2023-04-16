@@ -509,6 +509,9 @@ bool prov_data_ready(struct mesh_node *node, uint8_t *buf, uint8_t len)
 				prov->conf_in.start.auth_method =
 					PROV_STATIC_OOB;
 
+				/* jdk: testing */
+				prov->conf_in.start.auth_method =0;					
+
 			} else if (prov->conf_in.caps.output_size >
 					prov->conf_in.caps.input_size) {
 
